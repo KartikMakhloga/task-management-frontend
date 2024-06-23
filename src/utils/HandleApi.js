@@ -1,7 +1,7 @@
 // HandleApi.js
 import axios from "axios";
 
-const baseUrl = "https://task-management-backend-ryoi.onrender.com/";
+const baseUrl = "https://task-management-backend-ryoi.onrender.com";
 
 const getAllToDo = async (setToDo) => {
   try {
