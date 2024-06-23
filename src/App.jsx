@@ -35,6 +35,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <p>Github Repo: <a href="https://github.com/KartikMakhloga/task-management-app" target="_blank">click here</a></p>
         <h1>ToDo App</h1>
         <div className="top">
           <input
