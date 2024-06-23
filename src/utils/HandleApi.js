@@ -13,7 +13,15 @@ const getAllToDo = async (setToDo) => {
   }
 };
 
-const addToDo = (text, description, dueDate, setText, setDescription, setDueDate, setToDo) => {
+const addToDo = (
+  text,
+  description,
+  dueDate,
+  setText,
+  setDescription,
+  setDueDate,
+  setToDo
+) => {
   axios
     .post(`${baseUrl}/save`, { text, description, dueDate })
     .then((data) => {
@@ -27,7 +35,17 @@ const addToDo = (text, description, dueDate, setText, setDescription, setDueDate
     });
 };
 
-const updateToDo = (toDoId, text, description, dueDate, setToDo, setText, setDescription, setDueDate, setIsUpdating) => {
+const updateToDo = (
+  toDoId,
+  text,
+  description,
+  dueDate,
+  setToDo,
+  setText,
+  setDescription,
+  setDueDate,
+  setIsUpdating
+) => {
   axios
     .post(`${baseUrl}/update/${toDoId}`, { text, description, dueDate })
     .then((data) => {
